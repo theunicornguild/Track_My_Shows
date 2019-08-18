@@ -19,4 +19,4 @@ Right now all the cards are in the `backlog` and `IceBox` lists because we haven
 
 We'll be using git throughout the project as a version control tool to keep track of the changes we're making to the code and create checkpoints every time we finish a functionality.
 
-You can create a new repo on [github](https://github.com/) to start your project from scratch or [Fork and clone](https://github.com/) our repo (the same one provided in `Resources`) and use it as a starting point.
+You can create a new repo on [github](https://github.com/) to start your project from scratch or [Fork and clone](https://github.com/grumpy13/TrackMyShows_ReactJS) our repo (the same one provided in `Resources`) and use it as a starting point.
