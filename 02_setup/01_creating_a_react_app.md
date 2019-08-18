@@ -12,29 +12,9 @@ Yarn is a `JavaScript` package manager and task runner:
   ```
   This command will install yarn globally on your device
 
-Now you have two options to either 1) clone our starter file to get our starting components or 2) you can create your project from scratch (recommended so that you get used to it).
+Now let's create our React App...
 
-**How to clone the starter file? (option 1)**
-
-- Go to the project's [repo](https://github.com/grumpy13/TrackMyShows_ReactJS)
-- Fork the project to your github account
-- Copy the url and go to your terminal/shell
-
-```shell
-$ git clone <your url here>
-```
-
-```shell
-$ cd <the project's name>
-```
-
-```shell
-$ yarn install
-```
-
-this will install the same version of any libraries we have installed in this project
-
-**How to create a `React App`? (option 2)**
+**How to create a `React App`?**
 
 - Using the terminal go to the location on your device where you want to create the project
 - then using the following command
