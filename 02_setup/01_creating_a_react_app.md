@@ -34,3 +34,5 @@ Now let's create our React App...
   ```
   The first command will take you to the project's folder
   The second command will run your project
+
+**_Note:_** After finishing this step remember to link your local repo to the remote one you created in the previous step.
