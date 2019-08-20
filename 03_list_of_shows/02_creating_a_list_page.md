@@ -48,4 +48,4 @@ export default ShowsList;
 
 Basically, our `ShowsList` takes a list of shows imported from our data file `shows` and it maps through them to convert each object into a card. Finally, the list of cards will be rendered on the page. Your list page should look like this:
 
-![ShowsList](https://imgur.com/a/HwJRdHY)
+![ShowsList](https://i.imgur.com/42rPa4s.png)
