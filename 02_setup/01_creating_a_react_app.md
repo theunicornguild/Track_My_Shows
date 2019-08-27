@@ -20,7 +20,7 @@ Now let's create our React App...
 - then using the following command
 
   ```shell
-   yarn create react-app track-my-shows
+   $ yarn create react-app track-my-shows
   ```
 
   this will create a folder that will contain your project files
@@ -29,8 +29,8 @@ Now let's create our React App...
 
 - To run your project and see the changes you make live in your browser use the following commands
   ```shell
-  cd track-my-shows
-  yarn start
+  $ cd track-my-shows
+  $ yarn start
   ```
   The first command will take you to the project's folder
   The second command will run your project
