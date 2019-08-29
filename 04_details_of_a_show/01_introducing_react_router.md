@@ -4,13 +4,12 @@ As a user I want to be able to click on a specific show to read more information
 ```jsx
 import React, { Component } from "react";
 
-class ShowDetail extends Component {
-  state = {
-    selectedShow: null
-  };
+//Data
+import shows from "../Data/shows";
 
+class ShowDetail extends Component {
   render() {
-    const show = this.state.selectedShow;
+    const show = shows[0];
     const showName = `${show.name}`;
     return (
       <div className="container-fluid">
@@ -36,7 +35,7 @@ class ShowDetail extends Component {
 export default ShowDetail;
 ```
 
-But if we render this component we are going to get an error because simply `selectedShow` is null. Now we need to think how are we going to get the show that the user clicks on? What information do we need to have, and most importantly how are we going to move him from one page to another?
+If we render this component we are going to get the details of the first show in the list of shows which makes it static. Now we need to think how are we going to make it dynamic so that we get the show that the user clicks on? What information do we need to have, and most importantly how are we going to move him from one page to another?
 The answer to all these questions comes with something called `React Router` which is the exciting topic we are going to discuss/use in the next step.
 
 ![excited](https://66.media.tumblr.com/tumblr_mc3hg5VpQP1qcy0p7o1_400.gif)

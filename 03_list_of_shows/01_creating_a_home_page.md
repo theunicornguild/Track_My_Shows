@@ -30,4 +30,23 @@ class HomePage extends Component {
 export default HomePage;
 ```
 
-There's not much going on in here, so basically `HomePage` is going to get the list of shows from the `shows` file that we created when we `setup` our project and it's going to send it to `ShowsList` component which we will create in the next step.
+There's not much going on in here, so basically `HomePage` is going to get the list of shows from the `shows` file that we created when we `setup` our project and it's going to send it to `ShowsList` component which we will create in the next step. Now that we created our `HomePage` let's render it in our `src/App` like this:
+
+```jsx
+import React from "react";
+
+//Components
+import HomePage from "./Components/HomePage";
+
+function App() {
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Perfect, now let's move to the next step...
