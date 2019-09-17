@@ -21,9 +21,9 @@ ReactDOM.render((
 ), document.getElementById('root'))
 ```
 
-As you probably already know `<App>` is where we're rendering all our components. On the other hand, `<BrowserRouter>` is what we need to wrap our <App> component with in order to allow our application to render a component based on the URL, and it gives us access to the `history` prop which can be used to call functions to navigate between routes.
+As you probably already know `<App>` is where we're rendering all our components. On the other hand, `<BrowserRouter>` is what we need to wrap our `<App>` component with in order to allow our application to render a component based on the URL, and it gives us access to the `history` prop which can be used to call functions to navigate between routes.
 
-In the previous step, we created our `ShowDetail` page and in order for us to display this page we'll need render it in our `src/App`, but if you recall we are currently rendering our `HomePage` there, so this leaves with 2 options we either remove the `HomePage` and render `ShowDetail` instead or we render both at the same time which is going to be messy. This is where `React Router` comes in handy. We can specify which component we want to render based on the URL, so let's do that by adding a route to our `HomePage` like the following:
+In the previous step, we created our `ShowDetail` page and in order for us to display this page we'll need to render it in our `src/App`, but if you recall we are currently rendering our `HomePage` there, so this leaves with 2 options we either remove the `HomePage` and render `ShowDetail` instead or we render both at the same time which is going to be messy. This is where `React Router` comes in handy. We can specify which component we want to render based on the URL, so let's do that by adding a route to our `HomePage` like the following:
 
 ```jsx
 import React from "react";

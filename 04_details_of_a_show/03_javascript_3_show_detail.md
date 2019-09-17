@@ -1,4 +1,4 @@
-Let's go back to our `ShowDetail` component to make some changes. Our updated component will like this:
+Let's go back to our `ShowDetail` component to make some changes. Our updated component will look like this:
 
 ```jsx
 import React, { Component } from "react";
