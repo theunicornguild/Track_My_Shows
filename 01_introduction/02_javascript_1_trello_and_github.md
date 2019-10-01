@@ -1,18 +1,18 @@
-In this project you'll be using both `Trello` and `git`.
+In this project you'll be using both `Trello` and `git` to help you manage your project.
 
 #### Trello
 
-`Trello` is a tool used to help you keep track of your work. What you need to do...what you've already done and so on.
+`Trello` is a tool used to help you keep track of your work. What you need to do, what you've already done and so on.
 
-Open the project's `Trello` board which you'll find in the `Resources` section. In the board you'll find 4 lists:
+Open the project's `Trello` board which you'll find in the `Resources` section. In the board you'll find 5 lists:
 
-- `IceBox`: this list has all the cards/functionalities that are nice to have but not necessary (iceboxed), or you can say they are extra features you can add later.
-- `Backlog`: this list has all the cards/functionalities that you need to build in order for your project to reach the MVP level.
-- `Doing`: this list will have all the cards/functionalities that you are currently working on.
-- `Review`: this list will have all the cards/functionalities that you've finished but still need to be reviewed by someone.
-- `Done`: this list will have all the cards/functionalities that are done.
+- `IceBox`: This list has all the cards/functionalities that are nice to have but not necessary (iceboxed). You can say they are extra features you can add later.
+- `Backlog`: This list has all the cards/functionalities that you need to build in order for your project to reach the MVP stage.
+- `Doing`: This list will have all the cards/functionalities that you are currently working on.
+- `Review`: This list will have all the cards/functionalities that you've finished, but still need to be reviewed by someone.
+- `Done`: This list will have all the cards/functionalities that are done.
 
-Right now all the cards are in the `backlog` and `IceBox` lists because we haven't started working on the project YET. As we start working on this project, we'll be moving the cards to the proper list.
+Right now all the cards are in the `Backlog` and `IceBox` lists because we haven't started working on the project YET. As we start working on this project, we'll be moving the cards to the proper list.
 
 ---
 
