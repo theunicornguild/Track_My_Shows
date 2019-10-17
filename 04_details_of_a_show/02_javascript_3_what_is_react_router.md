@@ -64,7 +64,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path="/" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route
           path="/show/:showID"
           render={props => <ShowDetail {...props} shows={shows} />}
@@ -80,6 +80,7 @@ export default App;
 
 You will notice a few new things that were added:
 `<Switch>`: as we mentioned before, `<Switch>` renders the first child `<Route>` that matches the URL only. Without it, all components that include similar paths will render because they all match a part of the path.
+`exact`: is a keyword that specifies that the URL should be exactly the same as what's written in the URL bar.
 `render`: is a prop that takes in an anonymous function that will return jsx elements or usually another component. We use when we want to send props to the component being rendered, and as shown in the code above we are sending `shows` as a prop to our `ShowDetail` component.
 `{...props}`: the `...` notation is used to spread the keys and values of an object. That way we can pass extra props to our component without worrying about overriding important props.
 `/:showID`: the `:` means that it's a dynamic parameter so it's part of the path URL. We will explain more about url parameters later on, and you'll understand why we need them.
