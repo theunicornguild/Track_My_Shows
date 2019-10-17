@@ -82,7 +82,9 @@ export default SeasonRow;
 
 Let's explain a few things:
 `AccordionToggle` provides a button that switches between each `AccordionCollapse` component, and for each `AccordionCollapse` component you need an `eventKey` to distinguish between them which is why we sent an `id` that was mentioned earlier.
+
 **_Note_**:`props.season` is actually an array of episodes, and each episode has a key called `season` which gives us the season's number that this episode belongs to. I know the way these data were named is kind of confusing lol. This is what happens when you don't create the data yourself lol.
+
 Okay moving on, so far in our card body we have the word "hello" in it, but in the next steps we are going to display the actual episodes of each season. Our `ShowDetail` currently should look like this:
 
 ![showDetail](https://i.imgur.com/J8NvN0n.png)
