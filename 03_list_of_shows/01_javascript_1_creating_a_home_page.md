@@ -13,7 +13,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 ...
 ```
 
-Now let's move to the interesting part. First, let's create a new folder called `Components` inside our `src` folder `src/Components`. This step in not necessary but it's good practice and it makes it easier for you to find your files later. Inside your newly created Components folder let's create our new component which is our landing page, and let's call it `HomePage`. So the current foldering structure looks like this `src/Components/HomePage.js`.
+Now let's move to the interesting part. First, let's create a new folder called `Components` inside our `src` folder `src/Components`. This step in not necessary but it's good practice and it makes it easier for you to find your files later. Inside your newly created `Components` folder let's create our new component which is our landing page, and let's call it `HomePage`. So the current folder-ing structure looks like this `src/Components/HomePage.js`.
 
 Our `HomePage` component is going to look like this:
 

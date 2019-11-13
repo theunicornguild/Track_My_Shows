@@ -1,4 +1,4 @@
-Alright now that our `SearchBar` is diplayed on the page, let's make it functional. Basically, we want to filter our shows based on what the user types in the input field, so we need to create a function that does exactly that. We'll add this function to our `HomePage` component because it's where we imported our `shows` data. After adding the new functionality our `HomePage` component will look like this:
+Alright now that our `SearchBar` is displayed on the page, let's make it functional. Basically, we want to filter our shows based on what the user types in the input field, so we need to create a function that does exactly that. We'll add this function to our `HomePage` component because it's where we imported our `shows` data. After adding the new functionality our `HomePage` component will look like this:
 
 ```jsx
 import React, { Component } from "react";

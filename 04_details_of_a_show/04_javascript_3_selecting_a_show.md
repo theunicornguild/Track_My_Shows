@@ -38,8 +38,8 @@ We first imported `Link` from `react-router-dom` and then we simply added the fo
 ...
 ```
 
-`Link` will look through all the <Route/> components nested in a <Switch> and render the corresponding component. Unlike the <a href> element tag, `<Link>` doesn't refresh the page so you don't need to keep making requests every time your moving between components. In the code above, we are adding a link to the `ShowDetail` page and it takes the show's ID as a URL parameter which is the `showID` variable we mentioned in the previous step, and that is exactly how it will know which show will be displayed in our `ShowDetail` page, so now if you click on the `More` button you added to `ShowCard`, it will take you to the specific detail page of the selected show.
+`Link` will look through all the `<Route/>` components nested in a `<Switch>` and render the corresponding component. Unlike the `<a href>` element tag, `<Link>` doesn't refresh the page so you don't need to keep making requests every time you're moving between components. In the code above, we are adding a link to the `ShowDetail` page and it takes the show's ID as a URL parameter which is the `showID` variable we mentioned in the previous step, and that is exactly how it will know which show will be displayed in our `ShowDetail` page, so now if you click on the `More` button you added to `ShowCard`, it will take you to the specific detail page of the selected show.
 
-![ShowDetail](https://i.imgur.com/'tbc')
+![ShowDetail](https://i.imgur.com/zytcM0y.png)
 
 ![yaay](https://media.tenor.com/images/2be8af5edb3dd3d5129a6f3b6bd712fa/tenor.gif)

@@ -49,7 +49,7 @@ Take some time, let it sink in, and try to understand what's happening in the co
 
 ![waiting](https://media1.tenor.com/images/da7d905afc93a70b640406c5949e1021/tenor.gif?itemid=9562336)
 
-Okay, so far our `SearchBar` simply takes whatever the user types in the input field an sets it as the state's `query` value through the `OnChange` attribute and the `handleChange` method. Now we need to actually display our `SearchBar` inside our `HomePage`, soooo what do you think the next step is?
+Okay, so far our `SearchBar` simply takes whatever the user types in the input field and sets it as the state's `query` value through the `OnChange` attribute and the `handleChange` method. Now we need to actually display our `SearchBar` inside our `HomePage`, soooo what do you think the next step is?
 
 ![thinking](https://media1.giphy.com/media/MsWnkCVSXz73i/giphy.gif)
 

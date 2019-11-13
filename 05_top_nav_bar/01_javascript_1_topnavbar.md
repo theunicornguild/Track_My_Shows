@@ -1,4 +1,4 @@
-Let's add some UI features. We are going to add a navigation bar on top of every page that takes you to the `HomePage` when you click on it no matter where you are.
+Let's add some UX features. We are going to add a navigation bar on top of every page that takes you to the `HomePage` when you click on it no matter where you are.
 To do that let's create a new component and let's call it `TopNavBar` then all we need to do is add a `Link` that's going to take us to the `HomePage`, and that's it! it's really that simple, so our `TopNavBar` code will be the following:
 
 ```jsx
@@ -9,7 +9,7 @@ class TopNavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <Link className="navbar-brand" to="/home">
+        <Link className="navbar-brand" to="/">
           HOME
         </Link>
       </nav>

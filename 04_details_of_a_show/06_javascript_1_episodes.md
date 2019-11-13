@@ -1,4 +1,4 @@
-To be able to dispaly the episodes of each season first let's create an `Episodes` component and an `EpisodeDetail` component as well which is very similar to the `ShowDetail` component we did before.
+To be able to display the episodes of each season first let's create an `Episodes` component and an `EpisodeDetail` component as well which is very similar to the `ShowDetail` component we created before.
 Our `Episodes` component will look like this:
 
 ```jsx
@@ -116,7 +116,7 @@ function App() {
 export default App;
 ```
 
-And the final step is to update the `SeasonRow` component to render the `Episodes` component instead of the word hello like this:
+And the final step is to update the `SeasonRow` component to render the `Episodes` component instead of the word "hello" like this:
 
 ```jsx
 import React from "react";
