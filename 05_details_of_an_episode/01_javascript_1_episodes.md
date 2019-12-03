@@ -26,7 +26,7 @@ function Episodes(props) {
 export default Episodes;
 ```
 
-There's nothing much going on in this component as you can see we are just mapping through the episodes that were sent through props and displaying each one as a `Link` that takes us to the specfic episode's detail page when we click on it.
+There's nothing much going on in this component as you can see we are just mapping through the episodes that were sent through props and displaying each one as a `Link` that takes us to the specific episode's detail page when we click on it.
 In order for that to work we need to create our `EpisodeDetail` page which will look like this:
 
 ```jsx
