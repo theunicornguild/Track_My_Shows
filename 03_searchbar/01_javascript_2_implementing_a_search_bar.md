@@ -1,4 +1,4 @@
-To make our project more user friendly let's implement a search bar for our list of shows. In order to do that we need to create a new component and let's call it `SearchBar`. It will be inside our components folder `src/Components/SearchBar`.
+To make our project more user friendly let's implement a search bar for our list of shows which is our second card in the `Backlog`, so let's move it to `Doing`. In order to do that we need to create a new component and let's call it `SearchBar`. It will be inside our components folder `src/Components/SearchBar`.
 Before starting to write the code let's install some required packages for FontAwesome. FontAwesome is a font and icon toolkit based on CSS and LESS. In order to start using it we need to install the following packages:
 
 ```shell

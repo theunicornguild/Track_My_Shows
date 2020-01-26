@@ -1,4 +1,5 @@
-So far we have our list page where we can see our list of shows, but what if we wanted to see the details of a specific show?
+So far we have our list page where we can see our list of shows, but what if we wanted to see the details of a specific show? That's our third `Backlog` card "you know what to do now :D".
+
 As a user I want to be able to click on a specific show to read more information about it. In order for us to provide this for our users, we need to create a `ShowDetail` component and add it to our components folder `src/Components/ShowDetail.js`. Initially, our `ShowDetail` will look like this:
 
 ```jsx

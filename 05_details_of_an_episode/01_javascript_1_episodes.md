@@ -1,4 +1,4 @@
-To be able to display the episodes of each season first let's create an `Episodes` component and an `EpisodeDetail` component as well which is very similar to the `ShowDetail` component we created before.
+Let's move to the fourth feature. To be able to display the episodes of each season first let's create an `Episodes` component and an `EpisodeDetail` component as well which is very similar to the `ShowDetail` component we created before.
 Our `Episodes` component will look like this:
 
 ```jsx
@@ -7,7 +7,7 @@ import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Episodes(props) {
-  let episodes = props.episodes.map((episode, i) => (
+  let episodesRows = props.episodes.map((episode, i) => (
     <tr key={episode.id}>
       <td>
         <Link to={`/episode/${episode.id}`}>{`Episode ${++i}: ${
@@ -18,7 +18,7 @@ function Episodes(props) {
   ));
   return (
     <Table hover>
-      <tbody>{episodes}</tbody>
+      <tbody>{episodesRows}</tbody>
     </Table>
   );
 }

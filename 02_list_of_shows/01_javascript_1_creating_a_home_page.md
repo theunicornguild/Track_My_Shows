@@ -1,4 +1,6 @@
-Before jumping to the list page let's create a landing page that's going to render the list page. In this project we are going to use Bootstrap a lot to style our components, so let's install it using the following command:
+Let's grab the first card in our `Backlog` and move it to `Doing`, so we will be starting with the list page which is where the user will see the entire list of shows, but before jumping to the list page let's create a landing page that's going to render the list page.
+
+In this project we are going to use Bootstrap a lot to style our components, so let's install it using the following command:
 
 ```shell
 $ yarn add bootstrap

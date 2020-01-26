@@ -45,8 +45,8 @@ import { Accordion } from "react-bootstrap";
 //Components
 import SeasonRow from "./SeasonRow";
 
-function Seasons(props) {
-  let rows = props.seasons.map((season, i) => (
+function Seasons({ seasons }) {
+  let rows = seasons.map((season, i) => (
     <SeasonRow season={season} key={season[0].id} id={i} />
   ));
   return <Accordion>{rows}</Accordion>;
@@ -62,17 +62,19 @@ Our `SeasonRow` will look like this:
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
-function SeasonRow(props) {
+function SeasonRow({ season, id }) {
   return (
     <Card>
       <Card.Header>
-        <Accordion.Toggle as={Button} variant="link" eventKey={props.id}>
-          Season {props.season[0].season}
+        <Accordion.Toggle as={Button} variant="link" eventKey={id}>
+          Season {season[0].season}
         </Accordion.Toggle>
-        <span className="float-right">{props.season.length} Episodes</span>
+        <span className="float-right">{season.length} Episodes</span>
       </Card.Header>
-      <Accordion.Collapse eventKey={props.id}>
-        <Card.Body>"hello"</Card.Body>
+      <Accordion.Collapse eventKey={id}>
+        <Card.Body>
+          <Episodes episodes={season} />
+        </Card.Body>
       </Accordion.Collapse>
     </Card>
   );
@@ -91,3 +93,5 @@ Let's explain a few things:
 Okay moving on, so far in our card body we have the word "hello" in it, but in the next steps we are going to display the actual episodes of each season. Our `ShowDetail` currently should look like this:
 
 ![showDetail](https://i.imgur.com/J8NvN0n.png)
+
+Yaaay!!! you're done with another feature! You know what to do :p!

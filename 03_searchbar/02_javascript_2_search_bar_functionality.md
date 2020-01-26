@@ -69,6 +69,6 @@ class SearchBar extends Component {
 export default SearchBar;
 ```
 
-There's nothing much here, we just added a function call to `filterShows` inside `handleChange` and we sent the `query` as an argument. That's pretty much it, now if you try to type something in the search bar it should filter what you see in the list page based on your input.
+There's nothing much here, we just added a function call to `filterShows` inside `handleChange` and we sent the `query` as an argument. That's pretty much it, now if you try to type something in the search bar it should filter what you see in the list page based on your input. Try it out and don't forget to push your code to github when you're done, and move the card from `Backlog` to `Done`.
 
 ![yaaay](https://media1.tenor.com/images/05a7505c225710ad1b77bc4caf7cd0bf/tenor.gif?itemid=5370842)
