@@ -22,4 +22,3 @@ After forking and cloning the project all you need to do now is to go into the p
   ```
   The first command will take you to the project's folder
   The second command will run your project
-
