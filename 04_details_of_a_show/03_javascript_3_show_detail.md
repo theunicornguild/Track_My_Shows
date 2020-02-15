@@ -1,3 +1,6 @@
+//Add loading state/component for ShowDetail otherwise it will throw an error
+
+
 Let's go back to our `ShowDetail` component to make some changes. Our updated component will look like this:
 
 ```jsx

@@ -29,6 +29,8 @@ export default Episodes;
 There's nothing much going on in this component as you can see we are just mapping through the episodes that were sent through props and displaying each one as a `Link` that takes us to the specific episode's detail page when we click on it.
 In order for that to work we need to create our `EpisodeDetail` page which will look like this:
 
+//Add loading state/component to EpisodeDetail
+
 ```jsx
 import React, { Component } from "react";
 
@@ -89,6 +91,7 @@ Let's discuss what's happening in the code:
 The value of the URL parameter gets updated with the correct ID of the episode that the user clicks on using the `Link` component we mentioned earlier.
 
 Let's not forget to update our `App` with the new `Route` for the `EpisodeDetail` component like this:
+
 
 ```jsx
 ...

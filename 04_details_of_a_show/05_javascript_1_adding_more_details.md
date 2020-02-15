@@ -58,6 +58,10 @@ export default Seasons;
 You may not be familiar with `Accordions`, so what they basically do is restrict Card components to only open one at a time. You'll also notice that we are sending an `id` as a prop, and you'll know why when we write our `SeasonRow` component next.
 Our `SeasonRow` will look like this:
 
+
+//Episodes component is not created yet.
+
+
 ```jsx
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";

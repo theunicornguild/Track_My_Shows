@@ -14,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 ...
 ```
+//Typo: This step **is** not necessary
 
 Now let's move to the interesting part. First, let's create a new folder called `Components` inside our `src` folder `src/Components`. This step in not necessary but it's good practice and it makes it easier for you to find your files later. Inside your newly created `Components` folder let's create our new component which is our landing page, and let's call it `HomePage`. So the current folder-ing structure looks like this `src/Components/HomePage.js`.
 
@@ -40,6 +41,8 @@ class HomePage extends Component {
 
 export default HomePage;
 ```
+
+//Maybe it’s better to specify that it’s src/App**.js** file.
 
 There's not much going on in here, so basically `HomePage` is going to get the list of shows from the `shows` file that we created when we `setup` our project and it's going to send it to `ShowsList` component which we will create in the next step. Now that we created our `HomePage` let's render it in our `src/App` like this:
 
