@@ -31,10 +31,12 @@ In order for that to work we need to create our `EpisodeDetail` page which will 
 
 ```jsx
 import React, { Component } from "react";
+import Loading from "./Loading";
 
 class EpisodeDetail extends Component {
   state = {
-    selectedEpisode: null
+    selectedEpisode: null,
+    loading: true
   };
 
   componentDidMount() {
@@ -47,33 +49,37 @@ class EpisodeDetail extends Component {
     );
     if (episode) {
       this.setState({
-        selectedEpisode: episode
+        selectedEpisode: episode,
+        loading: false
       });
     }
   }
 
   render() {
-    const episode = this.state.selectedEpisode;
-    const episodeName = `${episode.name}`;
-    return (
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col">
-            <h3>{episodeName}</h3>
-            <img
-              src={episode.image.original}
-              className="img-thumbnail img-fluid"
-              alt={episodeName}
-            />
-          </div>
-          <div className="col">
-            <h3>Summary:</h3>
-            <p>{episode.summary}</p>
-            <h5>Season: {episode.season}</h5>
+    if (this.state.loading) return <Loading />;
+    else {
+      const episode = this.state.selectedEpisode;
+      const episodeName = `${episode.name}`;
+      return (
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <h3>{episodeName}</h3>
+              <img
+                src={episode.image.original}
+                className="img-thumbnail img-fluid"
+                alt={episodeName}
+              />
+            </div>
+            <div className="col">
+              <h3>Summary:</h3>
+              <p>{episode.summary}</p>
+              <h5>Season: {episode.season}</h5>
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
@@ -125,12 +131,12 @@ import { Accordion, Card, Button } from "react-bootstrap";
 //Components
 import Episodes from "./Episodes";
 
-function SeasonRow(props) {
+function SeasonRow({ season, id }) {
   return (
 ...
-      <Accordion.Collapse eventKey={props.id}>
+      <Accordion.Collapse eventKey={id}>
         <Card.Body>
-            <Episodes episodes={props.season} />
+            <Episodes episodes={season} />
         </Card.Body>
       </Accordion.Collapse>
     </Card>

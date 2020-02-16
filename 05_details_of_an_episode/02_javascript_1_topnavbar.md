@@ -20,6 +20,33 @@ class TopNavBar extends Component {
 export default TopNavBar;
 ```
 
+Then let's render our `TopNavBar` in our `App.js` like this:
+
+```jsx
+import React from "react";
+....
+
+//Components
+...
+import TopNavBar from "./Components/TopNavBar";
+
+...
+
+function App() {
+  return (
+    <div>
+      <TopNavBar />
+
+      <Switch>
+        ...
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
+```
+
 ![navbar](https://i.imgur.com/KfD3jsq.jpg)
 
 So now whenever a user wants to go back to the home page he/she can easily click on the word `HOME` and that's it.

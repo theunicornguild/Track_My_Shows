@@ -40,7 +40,7 @@ function ShowsList({ shows }) {
 export default ShowsList;
 ```
 
-Basically, our `ShowsList` takes a list of shows imported from our data file `shows` and it maps through them to convert each object into a card. Finally, the list of cards will be rendered on the page. By now, your list page should look something like this:
+Basically, our `ShowsList` takes a list of shows imported from our data file `shows` and it maps through them to convert each object into a card. Now, that we have our `ShowsList`, you can go back to the `HomePage` and uncomment the code that renders it. Finally, the list of cards will be rendered on the page. By now, your list page should look something like this:
 
 ![ShowsList](https://i.imgur.com/42rPa4s.png)
 

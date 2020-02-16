@@ -15,13 +15,13 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 ...
 ```
 
-Now let's move to the interesting part. First, let's create a new folder called `Components` inside our `src` folder `src/Components`. This step in not necessary but it's good practice and it makes it easier for you to find your files later. Inside your newly created `Components` folder let's create our new component which is our landing page, and let's call it `HomePage`. So the current folder-ing structure looks like this `src/Components/HomePage.js`.
+Now let's move to the interesting part. First, let's create a new folder called `Components` inside our `src` folder `src/Components`. This step is not necessary but it's good practice and it makes it easier for you to find your files later. Inside your newly created `Components` folder let's create our new component which is our landing page, and let's call it `HomePage`. So the current folder-ing structure looks like this `src/Components/HomePage.js`.
 
 Our `HomePage` component is going to look like this:
 
 ```jsx
 import React, { Component } from "react";
-import ShowsList from "./ShowsList";
+//import ShowsList from "./ShowsList";
 
 //Data
 import shows from "../Data/shows";
@@ -30,9 +30,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="container-responsive">
-        <div className="col-12">
-          <ShowsList shows={shows} />
-        </div>
+        <div className="col-12">{/* <ShowsList shows={shows} />*/}</div>
       </div>
     );
   }
@@ -41,7 +39,7 @@ class HomePage extends Component {
 export default HomePage;
 ```
 
-There's not much going on in here, so basically `HomePage` is going to get the list of shows from the `shows` file that we created when we `setup` our project and it's going to send it to `ShowsList` component which we will create in the next step. Now that we created our `HomePage` let's render it in our `src/App` like this:
+There's not much going on in here, so basically `HomePage` is going to get the list of shows from the `shows` file that we created when we `setup` our project and it's going to send it to `ShowsList` component which we will create in the next step (that's why the code for rendering the ShowsList inside the HomePage is commented out). Now that we created our `HomePage` let's render it in our `src/App.js` like this:
 
 ```jsx
 import React from "react";
