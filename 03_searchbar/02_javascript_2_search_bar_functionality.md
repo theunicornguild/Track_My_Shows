@@ -51,10 +51,23 @@ Let's start with the state: as you've probably have noticed we changed the name 
 
 ![duh](https://media.tenor.com/images/0fb5d4079ea1c2232c5f73ed263b06e7/tenor.gif)
 
-And because we changed the name in the state we need to change it inside the prop that's being sent to `ShowsList`. Before we were sending `this.state.shows` now we'll send `this.state.filteredShows`.
+And because we changed the name in the state we need to change it inside the prop that's being sent to `ShowsList`. Before we were sending `this.state.shows` now we'll send `this.state.filteredShows`. We also need to change the name of the props in `ShowsList.js` component from `shows` to `filteredShows` like this:
 
-//explain even further to change the name of the props in `ShowsList.js` Component as well because it will throw an error.
+```jsx
+import React from "react";
 
+//Components
+import ShowCard from "./ShowCard";
+
+function ShowsList({ filteredShows }) {
+  let showCards = filteredShows.map(show => (
+    <ShowCard show={show} key={show.id} />
+  ));
+  return <div className="row">{showCards}</div>;
+}
+
+export default ShowsList;
+```
 
 Moving on, another important addition to the code is `filterShows` which is simply the method that's going to make our `SearchBar` work. Basically, it takes a `query` as a parameter and filters the list of shows based on that `query`. If the show's name includes the `query` it adds it to the returned list of shows variable called `filteredShows` then we set this variable's value to `filteredShows` in the state. Finally, we send the `filterShows` method as a prop to our `SearchBar` because we're going to use it there.
 

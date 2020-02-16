@@ -58,10 +58,6 @@ export default Seasons;
 You may not be familiar with `Accordions`, so what they basically do is restrict Card components to only open one at a time. You'll also notice that we are sending an `id` as a prop, and you'll know why when we write our `SeasonRow` component next.
 Our `SeasonRow` will look like this:
 
-
-//Episodes component is not created yet.
-
-
 ```jsx
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
@@ -77,7 +73,7 @@ function SeasonRow({ season, id }) {
       </Card.Header>
       <Accordion.Collapse eventKey={id}>
         <Card.Body>
-          <Episodes episodes={season} />
+          <span>"hello"</span>
         </Card.Body>
       </Accordion.Collapse>
     </Card>
@@ -92,7 +88,7 @@ Let's explain a few things:
 - `AccordionToggle` provides a button that switches between each `AccordionCollapse` component.
 - For each `AccordionCollapse` component you need an `eventKey` to distinguish between them which is why we sent an `id` that was mentioned earlier.
 
-**_Note_**:`props.season` is actually an array of episodes, and each episode has a key called `season` which gives us the season's number that this episode belongs to. I know the way these data were named is kind of confusing lol. This is what happens when you don't create the data yourself lol.
+**_Note_**: the prop `season` is actually an array of episodes, and each episode has a key called `season` which gives us the season's number that this episode belongs to. I know the way these data were named is kind of confusing lol. This is what happens when you don't create the data yourself lol.
 
 Okay moving on, so far in our card body we have the word "hello" in it, but in the next steps we are going to display the actual episodes of each season. Our `ShowDetail` currently should look like this:
 
